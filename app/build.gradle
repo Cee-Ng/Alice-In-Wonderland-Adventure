@@ -22,13 +22,13 @@ android {
     buildToolsVersion "26.0.2"
 
     defaultConfig {
-        applicationId "io.intrepid.skotlinton"
+        applicationId "cee.ng.aliceadventure"
         minSdkVersion 17
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "io.intrepid.skotlinton.CustomTestRunner"
+        testInstrumentationRunner "cee.ng.aliceadventure.CustomTestRunner"
     }
 
     signingConfigs {
