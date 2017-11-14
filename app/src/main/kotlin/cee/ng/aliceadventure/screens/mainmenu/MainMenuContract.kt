@@ -1,11 +1,11 @@
-package cee.ng.aliceadventure.screens.example1
+package cee.ng.aliceadventure.screens.mainmenu
 
 import cee.ng.aliceadventure.base.BaseContract
 
-interface Example1Contract {
+interface MainMenuContract {
     interface View : BaseContract.View {
 
-        fun gotoExample2()
+        fun goToTextAdventure()
     }
 
     interface Presenter : BaseContract.Presenter {

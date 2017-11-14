@@ -1,4 +1,4 @@
-package cee.ng.aliceadventure.screens.example1
+package cee.ng.aliceadventure.screens.mainmenu
 
 import cee.ng.aliceadventure.testutils.BasePresenterTest
 import org.junit.Before
@@ -6,19 +6,19 @@ import org.junit.Test
 import org.mockito.Mock
 import org.mockito.Mockito.verify
 
-internal class Example1PresenterTest : BasePresenterTest<Example1Presenter>() {
+internal class MainMenuPresenterTest : BasePresenterTest<MainMenuPresenter>() {
 
     @Mock
-    lateinit var mockView: Example1Contract.View
+    lateinit var mockView: MainMenuContract.View
 
     @Before
     fun setup() {
-        presenter = Example1Presenter(mockView, testConfiguration)
+        presenter = MainMenuPresenter(mockView, testConfiguration)
     }
 
     @Test
     fun onButtonClick() {
         presenter.onButtonClick()
-        verify(mockView).gotoExample2()
+        verify(mockView).goToTextAdventure()
     }
 }

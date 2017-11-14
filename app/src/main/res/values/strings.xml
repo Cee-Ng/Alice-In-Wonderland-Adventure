@@ -7,4 +7,8 @@
     <string name="common_remove">Remove</string>
 
     <string name="app_name">Aliceadventure</string>
+    <string name="main_menu_new_game">New Game</string>
+    <string name="main_menu_load">Load</string>
+    <string name="main_menu_options">Options</string>
+    <string name="menu_button">menu</string>
 </resources>
