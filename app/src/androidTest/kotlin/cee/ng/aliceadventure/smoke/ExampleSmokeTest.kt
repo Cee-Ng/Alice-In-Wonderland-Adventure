@@ -42,11 +42,8 @@ class ExampleSmokeTest : BaseUiTest() {
     fun smokeTest() {
         activityTestRule.launchActivity(null)
         mockServerRule.enqueueResponse(cee.ng.aliceadventure.debug.test.R.raw.mock_ip)
-
-        `when`(mockUserSettings.lastIp).thenReturn("127.0.0.2")
-
-        onView(withId(R.id.example1_button)).perform(click())
-        onView(withId(R.id.example2_current_ip)).check(matches(withText("Your current Ip address is 127.0.0.1")))
-        onView(withId(R.id.example2_previous_ip)).check(matches(withText("Your previous Ip address is 127.0.0.2")))
+        
+        onView(withId(R.id.main_menu_new_game_button)).perform(click())
+        onView(withId(R.id.text_adventure_menu_button)).check(matches(withText("menu")))
     }
 }
