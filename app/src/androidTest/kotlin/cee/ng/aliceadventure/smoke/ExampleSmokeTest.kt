@@ -11,7 +11,7 @@ import cee.ng.aliceadventure.InstrumentationTestApplication
 import cee.ng.aliceadventure.R
 import cee.ng.aliceadventure.rest.TestRestClient
 import cee.ng.aliceadventure.rules.MockServerRule
-import cee.ng.aliceadventure.screens.example1.Example1Activity
+import cee.ng.aliceadventure.screens.mainmenu.MainMenuActivity
 import cee.ng.aliceadventure.settings.UserSettings
 import cee.ng.aliceadventure.testutils.BaseUiTest
 import org.junit.Before
@@ -27,7 +27,7 @@ class ExampleSmokeTest : BaseUiTest() {
     val mockServerRule = MockServerRule()
     @Rule
     @JvmField
-    val activityTestRule = ActivityTestRule(Example1Activity::class.java, true, false)
+    val activityTestRule = ActivityTestRule(MainMenuActivity::class.java, true, false)
 
     @Mock
     internal lateinit var mockUserSettings: UserSettings
