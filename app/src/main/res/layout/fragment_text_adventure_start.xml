@@ -4,19 +4,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/default_margin"
     >
 
+    <cee.ng.aliceadventure.customviews.TypeWriter
+        android:id="@+id/text_adventure_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Alice, it's time to wake up"
+        android:textSize="21sp"
+        />
     <Button
         android:id="@+id/option_sleep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text_adventure_option_sleep"/>
+        android:text="@string/text_adventure_option_sleep"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/option_get_up"
+        />
 
     <Button
         android:id="@+id/option_get_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_adventure_option_wake_up"
-        app:layout_constraintLeft_toRightOf="@+id/option_sleep"/>
+        app:layout_constraintLeft_toRightOf="@+id/option_sleep"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
 
 </android.support.constraint.ConstraintLayout>
