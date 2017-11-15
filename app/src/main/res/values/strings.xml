@@ -11,4 +11,6 @@
     <string name="main_menu_load">Load</string>
     <string name="main_menu_options">Options</string>
     <string name="menu_button">menu</string>
+    <string name="text_adventure_option_sleep">Go Back To Sleep</string>
+    <string name="text_adventure_option_wake_up">Get Out Of Bed</string>
 </resources>

@@ -162,6 +162,8 @@ dependencies {
     androidTestImplementation "com.android.support.test.espresso:espresso-core:$espressoVersion"
     androidTestImplementation "com.android.support.test.espresso:espresso-idling-resource:$espressoVersion"
     androidTestImplementation "com.squareup.okhttp3:mockwebserver:$okhttpVersion"
+
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
 }
 
 spoon {
